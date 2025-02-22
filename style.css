@@ -1,0 +1,140 @@
+html,
+body {
+  background-color: #9cb7ef;
+  height: 100%;
+}
+
+* {
+  font-family: "Asap";
+  padding: 0;
+  margin: 0;
+}
+
+#expense-app-container {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+}
+
+#expense-app-form , #customer-bill-details-container{
+  margin: 30px 20px;
+  padding: 20px;
+  background-color: #021246;
+  border-radius: 3px;
+  color: white;
+  height: fit-content;
+}
+
+#expense-app-form h1,
+#customer-bill-details-container h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+
+#customer-bill-details-container p {
+  font-size: 12px;
+  margin: 5px 0 25px;
+  color: #dddddd;
+  text-align: center;
+}
+
+#customer-bill-details-container li{
+  margin: 10px;
+}
+
+#customer-bill-details-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.form-elements label{
+  cursor: pointer;
+  width: fit-content;
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0;
+  color: white;
+}
+
+.form-elements input,
+.form-elements textarea {
+  padding: 10px;
+  margin-top: 7px;
+  resize: none;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  font-size: 15px;
+  color: #565252;
+  cursor: pointer;
+}
+
+.form-elements input::placeholder,
+.form-elements textarea::placeholder {
+  color: #565252;
+  font-size: 15px;
+}
+
+#add-btn{
+  background-image: linear-gradient(to left, #8d8df3, #5dcdcd, skyblue);
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#customer-bill-balance-details{
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #021246;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+
+#customer-bill-balance-details div{
+    display: flex;
+    justify-content: center;
+}
+
+#customer-bill-balance-details h1{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#customer-bill-balance-details p{
+    color: yellow;
+    font-size: 25px;
+}
+
+#done-btn {
+  background-image: linear-gradient(to left, #8d8df3, #5dcdcd, skyblue);
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #8d8df3, #5dcdcd, skyblue);
+  border-radius: 3px;
+}
